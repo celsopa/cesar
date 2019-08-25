@@ -3,11 +3,10 @@
 *{
     margin: 0px;
     padding: 0px;
-
 }
 
 body{
-    background-color: rgb(179, 233, 233);
+    background-color: rgba(179, 233, 233, 0.788);
     color: rgb(23, 53, 145);
     width: 90%;
     padding: 10px;
@@ -16,29 +15,38 @@ body{
 }
 
 header{
-    width: fit-content;
+    align-content: center;
+    display: flex;
+    width: auto;
     margin: auto;
-    height: 300px;
+    flex-wrap: wrap;
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 5vw;
     margin: 5px;
 }
 
-h2, h3{
-    font-size: 1.8rem;
+h2{
+    font-size: 3vw;
+    margin: 5px;
+}
+
+h3{
+    font-size: 2.6vw;
     margin: 5px;
 }
 
 header p{
-    font-size: 1.3rem;
+    font-size: 2vw;
     margin: 5px;
 }
 
 
 ul li{
-    font-size: 1.5rem;
+    text-align: justify;
+    font-size: 2vw;
+    margin: 15px;
     list-style: none;
 }
 
@@ -49,23 +57,27 @@ footer{
     text-align: center; 
 }
 
+footer p{
+    font-weight: 700;
+}
+
 .cab-text{
     margin: auto;
-    float: left;
-    height: 300px;
+    width: auto;
+    min-width: 200px;
 }
 
 .cab-imagem{
     margin: auto;
-    float: left;
+    min-width: 150px;
     max-width: 300px;
-    margin-right: 20px;
+    max-width: 25%;
     border-radius: 5px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .texto-curriculo{
-    margin: 30px;
+    margin: 30px auto;
 }
 
 
@@ -81,7 +93,7 @@ footer{
     margin-bottom: 10px;
     text-align: center;
     width: 300px;
-    max-width: 300px;
+    max-width: 200px;
 }
 
 .cartao h4{
@@ -91,6 +103,95 @@ footer{
 }
 
 .cartao img{
+    height: 100%;
     border-radius: 5px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.lattes img{
+    height: 30px;
+}
+
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: unset;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .cab-imagem{
+        min-width: 200px;
+    }
+
+    h1{
+        font-size: 2rem;
+     
+    }
+    
+    h2{
+        font-size: 1.4rem;
+     
+    }
+    
+    h3{
+        font-size: 1.4rem;
+     
+    }
+    
+    header p{
+        font-size: 1rem;
+     
+    }
+    
+    
+    ul li{
+        font-size: 1rem;
+    }
+
+    .cartao img{
+        height: 60vh;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .cab-imagem{
+        min-width: 170px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+     
+    }
+    
+    h2{
+        font-size: 1.1rem;
+     
+    }
+    
+    h3{
+        font-size: 1.1rem;
+     
+    }
+    
+    header p{
+        font-size: 0.8rem;
+     
+    }
+    
+    
+    ul li{
+        font-size: 0.8rem;
+    }
+
+    .cartao img{
+        height: 40vh;
+    }
 }
