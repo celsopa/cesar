@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    background-color: rgb(179, 233, 233);
+    color: rgb(23, 53, 145);
+    width: 90%;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto
+}
+
+header{
+    width: fit-content;
+    margin: auto;
+    height: 300px;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 5px;
+}
+
+h2, h3{
+    font-size: 1.8rem;
+    margin: 5px;
+}
+
+header p{
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+
+ul li{
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+
+footer{
+    margin-top: 30px;
+    border-top: 1px black solid;
+    text-align: center; 
+}
+
+.cab-text{
+    margin: auto;
+    float: left;
+    height: 300px;
+}
+
+.cab-imagem{
+    margin: auto;
+    float: left;
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.texto-curriculo{
+    margin: 30px;
+}
+
+
+.local-trabalho{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartao{
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 300px;
+    max-width: 300px;
+}
+
+.cartao h4{
+    width: 200px;
+    height: 50px;
+    margin: auto;
+}
+
+.cartao img{
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
